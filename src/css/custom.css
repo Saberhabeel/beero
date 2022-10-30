@@ -1,0 +1,108 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@font-face {
+  font-family: "IBMPlexSans-Regular";
+  src: url('../../static/IBM Plex Sans Font/IBM-Plex-Sans/IBMPlexSans-Regular.otf') format('otf');
+}
+@font-face {
+  font-family: "IBM-Plex-Mono-Regular";
+  src: url('../../static/IBM Plex Sans Font/IBM-Plex-Mono/IBMPlexMono-Regular.otf') format('otf');
+}
+
+img{
+  /*max-width: 80%;
+  max-height: auto;*/
+  justify-content: center;
+}
+
+img[BNB]{
+  max-height: 100%;
+  max-width: 100%
+}
+
+:root {
+  --ifm-color-primary: #f0b90b;
+  --ifm-color-primary-dark: #d8a60a;
+  --ifm-color-primary-darker: #cc9d09;
+  --ifm-color-primary-darkest: #D0980B;
+  --ifm-color-primary-light: #F8D33A;
+  --ifm-color-primary-lighter: #f5c52b;
+  --ifm-color-primary-lightest: #f7cf4f;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-mono: "IBMPlexMono-Regular"
+  --ifm-font-family-base: "IBMPlexSans-Regular";
+
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(44, 39, 39, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary-dark: #e6aa00;
+  /* any other colors you wish to overwrite */
+}
+
+html[data-theme='light'] .navbar {
+  --ifm-color-primary-dark: #0a0a0a;
+  /* any other colors you wish to overwrite */
+}
+html[data-theme='light'] .navbar dropdown {
+  --ifm-color-primary-dark: #0a0a0a;
+  /* any other colors you wish to overwrite */
+}
+
+
+/*styling for search */
+[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
